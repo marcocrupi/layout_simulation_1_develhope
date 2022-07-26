@@ -18,8 +18,7 @@ body {
   grid-template-rows: auto 2fr auto;
   grid-template-areas:
     "asideArea navArea"
-    "asideArea sectionArea"
-    "asideArea circleArea";
+    "asideArea sectionArea";
 }
 
 aside {
@@ -90,18 +89,15 @@ button {
   font-weight: bold;
 }
 
-.circleArea {
-  display: flex;
-  justify-content: flex-end;
-  grid-area: circleArea;
-}
-
 .circle {
   background-color: grey;
   height: 2rem;
   width: 2rem;
   border-radius: 50px;
   margin: 20px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
 
 .leftLogoNav {
@@ -116,8 +112,7 @@ button {
     grid-template-rows: auto 2fr auto;
     grid-template-areas:
       "navArea"
-      "sectionArea"
-      "circleArea";
+      "sectionArea";
   }
 
   aside {
@@ -153,7 +148,9 @@ button {
     background-color: gray;
   }
 
-  .circleArea {
-    justify-content: flex-start;
+  .circle {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
   }
 }
